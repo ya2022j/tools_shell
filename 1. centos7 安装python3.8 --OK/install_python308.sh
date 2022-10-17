@@ -46,3 +46,29 @@ ln -s /usr/local/python3/bin/pip3.8 /usr/bin/pip3;
 
 
 pip3 install --upgrade pip;
+
+# 安装之后要修改yum 的配置
+
+#
+#配置yum
+#安装python3改完软链接以后发现yum命令报错了，yum是依赖python2.7的，你把python改成了3.8了，所以报错了。
+#
+#可以修改yum里对python2的依赖即可。虽然安装了python3但是系统里python2依旧还在系统里，可以通过python2来指定用python2.7的命令，首先来看下python2的命令在哪里
+#
+#[root@localhost ~]# which python2
+#/usr/bin/python2
+#1
+#2
+#可以cd到/usr/bin目录下 通过ls -alh|grep python查看python命令的详细情况。
+#
+#[root@localhost bin]# ls -alh|grep python
+#1
+#
+#可以看到python软连接是执行的python3命令，python2是执行的python2.7的命令
+#
+#vi /usr/libexec/urlgrabber-ext-down
+#1
+#修改对python的依赖，修改成python2或python2.7都可以。
+#
+#
+#vi /usr/bin/yum
