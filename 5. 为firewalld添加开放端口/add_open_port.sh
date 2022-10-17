@@ -1,3 +1,7 @@
+centos7防火墙导致nginx无法访问  https://blog.csdn.net/u010301202/article/details/115805117
+ 
+
+
 Centos7开放端口  https://blog.csdn.net/weixin_54202028/article/details/125403877
 
 1.先查看防火墙是否开启的状态，以及开放端口的情况：
