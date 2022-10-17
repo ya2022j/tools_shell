@@ -8,9 +8,9 @@ wget https://nginx.org/download/nginx-1.23.1.tar.gz;
 
 tar -zxvf nginx-1.23.1.tar.gz;
 cd nginx-1.23.1;
+#mkdir /usr/local/ssl;
 ./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module;
-
-make &&make install
+make && make install
 
 #启动
 #/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
