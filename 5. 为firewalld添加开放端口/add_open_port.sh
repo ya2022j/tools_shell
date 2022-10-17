@@ -1,3 +1,5 @@
+Centos7开放端口  https://blog.csdn.net/weixin_54202028/article/details/125403877
+
 1.先查看防火墙是否开启的状态，以及开放端口的情况：
 
 systemctl status firewalld.service(查看防火墙开启还是关闭)
