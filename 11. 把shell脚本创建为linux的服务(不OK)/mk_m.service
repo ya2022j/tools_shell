@@ -1,0 +1,15 @@
+
+
+
+# /etc/systemd/system/mk_m.service
+# 重载系统服务文件systemctl daemon-reload
+#  chmod +x /usr/bin/run_gunicorn.sh
+[Unit]
+Description=mk_m
+After=network.target remote-fs.target nss-lookup.target
+[Service]
+Type=forking
+ExecStart=bash /usr/bin/run_gunicorn.sh
+
+[Install]
+WantedBy=multi-user.target
