@@ -72,3 +72,10 @@ pip3 install --upgrade pip;
 #
 #
 #vi /usr/bin/yum
+
+
+# WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError("Can't connect to HTTPS URL because the SSL module is not available.")': /simple/pip/
+## 以上问题的对策，换镜像 ，豆瓣的
+
+pip3  install --upgrade pip -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+pip3  install lxml -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
