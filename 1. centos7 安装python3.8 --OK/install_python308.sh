@@ -1,6 +1,6 @@
 
 
-
+yum install -y net-tools;
 
 
 wget https://www.openssl.org/source/openssl-1.1.1a.tar.gz;
