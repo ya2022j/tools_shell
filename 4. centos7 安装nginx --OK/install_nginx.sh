@@ -1,5 +1,5 @@
 
-
+ yum -y install pcre-devel openssl openssl-devel;
 
 cd /usr/local/src;
 wget https://nginx.org/download/nginx-1.23.1.tar.gz;
