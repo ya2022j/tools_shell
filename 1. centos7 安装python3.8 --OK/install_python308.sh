@@ -40,6 +40,8 @@ make && make install;
 
  #添加python3的软链接
 ln -s /usr/local/python3/bin/python3.8 /usr/bin/python3 ;
+python3 -m：
+python3 -m pip install --upgrade pip setuptools wheel
 
 #添加 pip3 的软链接
 ln -s /usr/local/python3/bin/pip3.8 /usr/bin/pip3;
