@@ -78,4 +78,11 @@ pip3 install --upgrade pip;
 ## 以上问题的对策，换镜像 ，豆瓣的
 
 pip3  install --upgrade pip -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
-pip3  install lxml -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+pip3  install attrs bcrypt    beautifulsoup4   bs4          certifi           cffi          charset-normalizer  click          cloud-init       configobj    cryptography      dataclasses   fabric        Flask          -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+pip3  install Flask-Cors       gunicorn        idna         importlib-metadata invoke      itsdangerous      Jinja2         jsonpatch    jsonpointer     jsonschema      lxml        MarkupSafe     -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+pip3  install netifaces   oauthlib     paramiko   pathlib2     pip         pycparser   pygal         PyNaCl    pyrsistent   PyYAML  requests           setuptools       six   soupsieve      typing_extensions urllib3     Werkzeug    zipp          -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+   
+
+
