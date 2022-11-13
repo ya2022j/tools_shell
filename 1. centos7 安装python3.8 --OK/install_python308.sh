@@ -1,6 +1,6 @@
 
 
-yum install -y net-tools;
+
 
 
 wget https://www.openssl.org/source/openssl-1.1.1a.tar.gz;
@@ -40,8 +40,6 @@ make && make install;
 
  #添加python3的软链接
 ln -s /usr/local/python3/bin/python3.8 /usr/bin/python3 ;
-python3 -m ;
-python3 -m pip install --upgrade pip setuptools wheel ;
 
 #添加 pip3 的软链接
 ln -s /usr/local/python3/bin/pip3.8 /usr/bin/pip3;
@@ -80,8 +78,4 @@ pip3 install --upgrade pip;
 ## 以上问题的对策，换镜像 ，豆瓣的
 
 pip3  install --upgrade pip -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
-
-pip3  install  Flask          -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
-
-
-
+pip3  install docker-compose -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
