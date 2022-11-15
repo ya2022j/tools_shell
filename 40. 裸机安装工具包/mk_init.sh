@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#2022.11.15
+#
 #首先更新
 #1 删除本机python3，删除python3软链接
 #2 安装python3相关模块
@@ -80,7 +80,7 @@ pip3  install docker-compose gunicorn fabric flask flask_cors requests lxml bs4 
 #开启启动设置
 chmod +x /etc/rc.d/rc.local;
 
-echo  '#bash /home/mk_m/run_gunicorn.sh'  >>  /etc/rc.d/rc.local
+echo  'bash /home/mk_m/run_gunicorn.sh'  >>  /etc/rc.d/rc.local
 
 
 # 安装nginx
