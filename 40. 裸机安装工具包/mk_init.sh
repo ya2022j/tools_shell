@@ -11,8 +11,8 @@
 #7 安装htop，tmux，docker等工具...
 
 
-sudo yum update;
-sudo yum upgrade;
+sudo yum -y update;
+sudo yum  -y upgrade;
 yum install -y wget git ;
 
 #卸载python3
