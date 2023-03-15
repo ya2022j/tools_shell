@@ -27,4 +27,5 @@ make && make install
 #/usr/local/nginx/sbin/nginx -t -c /usr/local/nginx/conf/nginx.conf
 #
 
+# 批量杀死nginx进程 ps -ef | grep nginx | grep -v grep |awk '{print $2}' |xargs kill -9
 
